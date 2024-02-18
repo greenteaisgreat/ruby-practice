@@ -57,9 +57,9 @@
 # puts 10 / 3  #3
 # puts 10 / 3.0  #3.33333
 
-# num = -420.69
-# puts num.abs() #420.69
-# puts num.round() # -421
+# num = -410.67
+# puts num.abs() #410.67
+# puts num.round() # -411
 
 # puts Math.sqrt(16).to_i; #4
 # puts Math.log(0) #-Infinity
@@ -89,7 +89,7 @@
 # puts lucky_numbers.length
 
 # #2D ARRAYS
-# unlucky_numbers = [420, [69, 666], 42]
+# unlucky_numbers = [42, [67, 66], 44]
 
 # puts unlucky_numbers[1][0]
 
@@ -211,7 +211,7 @@
 #     puts i
 # end
 
-# nums = [420, 69, 666]
+# nums = [42, 67, 66]
 # for num in nums
 #     puts num
 # end
@@ -249,15 +249,15 @@
 # end
 
 # my_book = Book.new
-# my_book.title = 'poop'
-# my_book.author = 'poopington'
+# my_book.title = 'tim'
+# my_book.author = 'timington'
 # my_book.readBook()
-# my_book.title = 'scat'
+# my_book.title = 'grisby'
 # puts my_book.title
 
 # book1 = Book.new
-# book1.title = 'dook'
-# book1.author = 'dookington'
+# book1.title = 'frankie'
+# book1.author = 'frankington'
 # book1.readBook()
 
 
@@ -278,7 +278,7 @@
 #     end
 # end
 
-# book = Book.new('diarrhea', 'diarrheangton');
+# book = Book.new('nate', 'natington');
 
 # book.readBook()
 
