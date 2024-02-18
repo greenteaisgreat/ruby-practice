@@ -3,6 +3,8 @@
 # print "World"
 # puts '!'
 
+# ruby uses snake_casing_for_its_files_and_variables
+
 # #VARIABLES
 
 # name = 'Nathan'
@@ -15,6 +17,10 @@
 #     and additional words separated_like_this
 
 # =end
+
+# # to assign constants, use uppercase
+# MY_CONSTANT = 'hi'
+# YAY = 'yo'
 
 # #template literals can be done like this; can't use ``
 # puts "My name is #{name}"
@@ -219,6 +225,11 @@
 # nums.each do |num| 
 #     puts num
 # end
+
+# # if the do/end block can be contained on a single-line, do this
+# my_nums = [1, 2, 3]
+
+# my_nums.each { |num| puts num }
 
 
 
