@@ -42,6 +42,22 @@
 # puts 6.odd?  #false
 # puts 8.even?  #true
 
+# #the remainder method (.remainder) is similar to the modulo 
+# #operator, except that it outputs a positive int when its first
+# #operand is positive and a negative int when its first operand
+# #is negative; modulo does the opposite of this (pos int when 2nd
+# #operand is pos and neg int when 2nd operand is neg).
+
+# #just remember modulo returns 2nd parity, 
+# #remainder returns 1st parity
+# puts 16.remainder(5)  #1
+
+# #there's also a .divmod() method that computes both the integer
+# #result of the division and its modulo value
+# puts 16.divmod(5)  #3, 1
+
+puts 'foo'.object_id == 'foo'
+
 # # STRINGS
 # #strings have 0-based indexing
 # greeting = "Howdy" 
@@ -109,6 +125,18 @@
 # puts '!'.prepend('hello ', 'world')
 
 
+# #NIL
+# #nil is basically 'undefined', but for ruby. you can
+# #check if something is nil by using the .nil? method:
+# puts ''.nil?  #false
+# puts 'hello world'.nil?  #false
+# puts 0.nil?  #false
+
+# x = 
+# puts x.nil?  #true
+
+
+
 
 # #NUMBERS
 # #basic arithmetic, just like in js
@@ -136,14 +164,14 @@
     symbols are used often in hashes (objects) in ruby
 =end
 
-#to illustrate this concept, we'll look at the identifiers
-#of some strings vs symbols:
-puts "string".object_id  #60
-puts "string".object_id  #80
-puts :string.object_id  #305308
+# #to illustrate this concept, we'll look at the identifiers
+# #of some strings vs symbols:
+# puts "string".object_id  #60
+# puts "string".object_id  #80
+# puts :string.object_id  #305308
 
-puts "string".object_id === "string".object_id  #false
-puts :string.object_id === :string.object_id  #true
+# puts "string".object_id == "string".object_id  #false
+# puts :string.object_id == :string.object_id  #true
 
 # #  USER INPUT
 # retrieves information from the console
