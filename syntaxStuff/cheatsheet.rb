@@ -249,6 +249,19 @@
 
 
 # #  CLASSES
+
+# =begin
+#   ruby comes built-in with certain classes, such as the String
+#   class or the Number class. Each of those classes contains either
+#   an instance method or a class method:
+
+#   String.new() is a class method
+
+#   str = 'my string'
+#   str.split() is an instance method
+# =end
+
+
 # class Book
 #     #this combines the attr_reader & attr_writer methods
 #     attr_accessor :title, :author
@@ -377,3 +390,38 @@
 # your_chef.make_chicken()
 # your_chef.make_soup()
 # your_chef.say_hi()
+
+
+
+# #  COMPARISON 
+=begin 
+    ruby has a 'combined comparison operator', or otherwise
+    known as a spacechip operator that looks like this:
+
+    <=>
+
+    It is used to compare two objects and returns -1, 0, or 1 
+    depending on whether the first object is less than, equal to, 
+    or greater than the second object, respectively.
+
+    Here's how it works:
+
+    If the first object is less than the second object, it returns -1.
+    If the first object is equal to the second object, it returns 0.
+    If the first object is greater than the second object, it returns 1.
+=end
+
+
+# # IRB
+=begin
+    irb is ruby's command line. to access it, simply type 'irb'
+    in the command line to launch it. to launch irb with a file,
+    type in: 
+    
+    irb -r ./<path-to-some-file>
+
+    to see the raw data of a file, type in:
+
+    irb ./<path-to-some-file>
+    
+=end
