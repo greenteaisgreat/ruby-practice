@@ -25,6 +25,8 @@
 # #template literals can be done like this; can't use ``
 # puts "My name is #{name}"
 
+
+# #  MATH
 # #converts floating point to integer
 # puts 3.99.to_i
 
@@ -35,11 +37,19 @@
 # puts 3.8.to_s
 # puts "50".to_i + 100
 
-
+# #you can use .even and .odd after a number to check its parity
+# puts 7.even?  #false
+# puts 6.odd?  #false
+# puts 8.even?  #true
 
 # # STRINGS
 # #strings have 0-based indexing
 # greeting = "Howdy" 
+
+# #convert objects/prims to a string
+# puts 5.to_s  #=> '5'
+# puts nil.to_s  #=> ''
+# puts :symbol.to_s  #=> 'symbol' 
 
 # puts greeting.length #5
 # puts greeting[1] #o
@@ -50,6 +60,53 @@
 # puts greeting[2, 3] #wdy
 # #starting index, up-to but not including index
 # puts greeting[0..2] #Ho
+
+# #the shovel operator (<<) can also be used to concatenate strings
+# puts "hello " << "dawg"
+
+# #or the actual .concat() method
+# puts "hello ".concat("dawg")
+
+
+# # STRING METHODS
+# str = 'hello'
+
+# #capitalize the first letter
+# puts str = str.capitalize()
+
+# #all uppercase
+# puts str = str.upcase()
+
+# #all lowercase
+# puts str = str.downcase()
+
+# #check if the str is empty
+# puts str.empty? 
+# puts ''.empty?
+
+# #reverse a string
+# puts str.reverse()
+
+
+# #split
+# puts str.split()
+# puts str.split('')
+
+# #trim whitespace
+# puts '   hello   '.strip()
+
+# #substitute a certain character
+# puts 'he77o'.sub('7', 'l')  #the first occurring char
+# puts 'he77o'.gsub('7', 'l')  #all occurring chars
+
+# #insert string at a certain index
+# puts 'hello'.insert(-1, ' dude')
+
+# #delete all ocurring chars
+# puts str.delete('l')
+
+# #prepend a character
+# puts '!'.prepend('hello ', 'world')
 
 
 
@@ -70,7 +127,23 @@
 # puts Math.sqrt(16).to_i; #4
 # puts Math.log(0) #-Infinity
 
+#  SYMBOLS
+=begin
+    symbols are very similar to strings, except they differ
+    in their uniqueness. ruby has to save in memory every string
+    regardless of if they're the same or not. symbols allow you
+    to create strings that are unique and can't be duplicated.
+    symbols are used often in hashes (objects) in ruby
+=end
 
+#to illustrate this concept, we'll look at the identifiers
+#of some strings vs symbols:
+puts "string".object_id  #60
+puts "string".object_id  #80
+puts :string.object_id  #305308
+
+puts "string".object_id === "string".object_id  #false
+puts :string.object_id === :string.object_id  #true
 
 # #  USER INPUT
 # retrieves information from the console
@@ -92,6 +165,7 @@
 
 # puts lucky_numbers[0, 2]  #starting at 0, it retrieves 2 numbers
 # puts lucky_numbers[0..2]  #retrieves el's from 0 i to 2 i
+# puts lucky_numbers[-1]  #gets the last el
 # puts lucky_numbers.length
 
 # #2D ARRAYS
