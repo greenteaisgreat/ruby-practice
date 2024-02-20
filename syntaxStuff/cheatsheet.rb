@@ -243,6 +243,11 @@
 
 # puts sum(1, 2)  #3
 
+# #you can also use the .count method with a parameter 
+# #to sort through arrays
+# nums = [1, 2, 3, 4, 5, 6];
+# puts nums.count(&:even?)  #3 even numbers in nums
+
 
 
 # #  CONDITIONALS
