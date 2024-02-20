@@ -37,6 +37,11 @@
 # puts 3.8.to_s
 # puts "50".to_i + 100
 
+# #converts string to number
+# puts '4 hi there'.to_i  #4
+# puts '4 hi there'.to_f  #4.0
+
+
 # #you can use .even and .odd after a number to check its parity
 # puts 7.even?  #false
 # puts 6.odd?  #false
@@ -56,7 +61,12 @@
 # #result of the division and its modulo value
 # puts 16.divmod(5)  #3, 1
 
-puts 'foo'.object_id == 'foo'
+# #find the thousandth, hundreth, tens and ones place
+# num = 4926
+# puts num / 1000  #4
+# puts num % 1000 / 100  #9
+# puts num % 1000 % 100 / 10  #2
+# puts num % 1000 % 100 % 10 / 1  #6
 
 # # STRINGS
 # #strings have 0-based indexing
